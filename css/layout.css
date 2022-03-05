@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    --fundo:transparent linear-gradient(90deg, #1FACC2 0%, #35AB9D 43%, #52A96D 100%) 0% 0% no-repeat padding-box;
+    --cinza:#4E4E4F;
+}
+body{
+    font-family: 'Montserrat';
+}
+.promo{
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    background: var(--fundo);
+    opacity: 1;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-top{
+    height: 70px;
+    background-color: #616161;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+.nav-bar{
+    background-color:var(--cinza);
+}
+.container{
+    width: 980px;
+    margin: auto;
+    display: flex;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.option{
+    display: flex;
+}
+
+.form-search button{
+   height: 30px;
+}
+.form-search{
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background: var(--fundo);
+    width: 500px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item{
+    width: 130px;
+    height: 85px;
+    margin: 5px;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+.slider-main{
+    background-color: gainsboro;
+    height: 400px;
+}
+/* Espaçamentos */
+.ps{
+    padding: 10px;
+}
+/* Formatação de Texto */
+/* Cor */
+.text-gray{
+    color: var(--cinza);
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-white{
+    color: #fff;
+}
+/* Alinhamento */
+.text-center{
+    text-align: center;
+}
+
+.card{
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.card-code{
+   font-size: 10px;
+   color: var(--cinza);
+   font-weight: 500;
+}
+.card-price-a{
+    color: #748184;
+    font-size: 10px;
+    text-decoration-line: line-through;
+}
+.card-price-b{
+    color: #748184;
+    font-size: 10px;
+}
+.card-price{
+    font-size: 30px;
+    color: #1BA277;
+    font-weight: 800;
+}
+.btn-comprar{
+    background:var(--fundo);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 90%;
+}
+.timer{
+    height: 300px;
+    background-color: #748184;
+    border-radius: 10px;
+}
+.card-secondary{
+    width: 615px;
+    height: 300px;
+    background-color: #1BA277;
+    border-radius: 10px;
+    margin: 8px;
+}
+/* Elementos */
+.logo{
+    width: 195px;
+    height: 60px;
+    background-color:gainsboro;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    background-color:gainsboro;
+}
+.img{
+    width: 230px;
+    height: 230px;
+    background-color: gainsboro;
+}
+
