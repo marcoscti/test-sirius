@@ -36,15 +36,6 @@ body{
     margin: auto;
     display: flex;
 }
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.option{
-    display: flex;
-}
-
 .form-search button{
    height: 30px;
 }
@@ -76,6 +67,7 @@ body{
 .slider-main{
     background-color: gainsboro;
     height: 400px;
+    background-image: url("img/back-01.jpg");
 }
 /* Espaçamentos */
 .ps{
@@ -136,10 +128,42 @@ body{
     padding: 10px;
     width: 90%;
 }
-.timer{
-    height: 300px;
-    background-color: #748184;
-    border-radius: 10px;
+.timeout{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+.timeout .timer{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    align-items: center;
+}
+.desconto{
+    font-size: 30px;
+    font-weight: bold;
+}
+.redondo{
+    border-radius: 8px;
+}
+#horas , #minutos, #segundos{
+    border: 10px solid #1BA277;
+    padding: 20px;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .card-secondary{
     width: 615px;
