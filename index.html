@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/splide.min.css">
     <title>Praxseg</title>
 </head>
 
@@ -18,19 +19,19 @@
         <p>Frete grátis nas compras a partir de <strong>R$ 500,00</strong></p>
     </div>
     <header class="header-top">
-        <div class="row container">
-            <div class="option logo"></div>
-            <div class="option">
+        <div class="space container">
+            <div class="flex logo"></div>
+            <div class="flex">
                 <form action="#" class="form-search">
-                    <input type="text"><button>Search</button>
+                    <input type="text"><button>&#128269;</button>
                 </form>
             </div>
-            <div class="option">
+            <div class="flex">
                 <div class="icon"></div>&nbsp;
                 <p class="text-white">Olá!, Faça seu <a href="#" class="text-white">Login</a><br>
                     ou <a href="#" class="text-white">Cadastre-se</a></p>
             </div>
-            <div class="option">
+            <div class="flex">
                 <div class="icon"></div>
             </div>
         </div>
@@ -78,10 +79,42 @@
     </nav>
     <div class="slider-main">
 
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list ">
+                    <!-- Init Slider -->
+                    <li class="splide__slide">
+                        <div class="content">
+                            <h3 class="content-title text-bold">Empresa especializada na distribuição<br> de produtos de
+                                segurança eletrônica,<br> informática e telecomunicação.</h3>
+                            <p class="content-legend">Ganhe 10% de desconto na primeira compra usando o cupom</p>
+                            <a href="#" class="btn-comprar redondo">PRAXSEG10</a>
+                        </div>
+                        <div class="content"><img class="content-image" src="img/banner2.png"></div>
+                    </li>
+                    <!--End Slider -->
+                    <!-- Init Slider -->
+                    <li class="splide__slide">
+                        <div class="content">
+                            <h3 class="content-title text-bold">Empresa especializada na distribuição de produtos de
+                                <br>
+                                segurança eletrônica, informática e telecomunicação.</h3>
+                            <p class="content-legend">Ganhe 10% de desconto na primeira compra usando o cupom</p>
+                            <a href="#" class="btn-comprar redondo">PRAXSEG10</a>
+                        </div>
+                        <div class="content">
+                            <div class="img"></div>
+                        </div>
+                    </li>
+                    <!--End Slider -->
+                </ul>
+            </div>
+        </div>
     </div>
 
     <h1 class="text-gray text-center ps text-bold">MAIS VENDIDOS</h1>
     <div class="container">
+
         <!-- Inicio Card -->
         <div class="card">
             <div class="img"></div>
@@ -93,6 +126,7 @@
             <a href="#" class="btn-comprar">COMPRAR</a>
         </div>
         <!-- Fim Card -->
+
         <!-- Inicio Card -->
         <div class="card">
             <div class="img"></div>
@@ -127,14 +161,25 @@
         </div>
         <!-- Fim Card -->
     </div>
-    <div class="container flex">
+
+    </div>
+    <div class="container flex fundo-cinza text-white spacing">
         <div class="img"></div>
         <div class="timeout">
             <h4>TERMINA EM</h4>
             <div class="timer">
-                <div id="horas"></div>
-                <div id="minutos"></div>
-                <div id="segundos"></div>
+                <div class="time">
+                    <div id="horas"></div>
+                    Horas
+                </div>
+                <div class="time">
+                    <div id="minutos"></div>
+                    Minutos
+                </div>
+                <div class="time">
+                    <div id="segundos"></div>
+                    Segundos
+                </div>
             </div>
         </div>
         <div class="product">
@@ -144,10 +189,13 @@
             <a href="#" class="btn-comprar redondo">GARANTIR O MEU</a>
         </div>
     </div>
-    <div class="container">
-        <div class="card-secondary">
+    <div class="container spacing">
+        <div class="card-secondary blue ps">
+            <div class="img"></div>
+            <p class="text-white text-bold">Fechadura digital de sobrepor na Horizontal</p>
+            <p class="text-white">Com as fechaduras digitais de sobrepor da ELSYS você terá a mais no tendência em acesso residencial</p>
         </div>
-        <div class="card-secondary">
+        <div class="card-secondary ps">
         </div>
     </div>
     <h1 class="text-gray text-center ps text-bold">NOVIDADES</h1>
@@ -244,6 +292,7 @@
         </div>
         <!-- Fim Card -->
     </div>
+    <script src="js/splide.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
