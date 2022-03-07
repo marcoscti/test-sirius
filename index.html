@@ -15,71 +15,75 @@
 </head>
 
 <body>
-    <div class="promo">
-        <p>Frete grátis nas compras a partir de <strong>R$ 500,00</strong></p>
-    </div>
-    <header class="header-top">
-        <div class="space container">
-            <div class="flex logo"></div>
-            <div class="flex">
-                <form action="#" class="form-search">
-                    <input type="text"><button>&#128269;</button>
-                </form>
-            </div>
-            <div class="flex">
-                <div class="icon"></div>&nbsp;
-                <p class="text-white">Olá!, Faça seu <a href="#" class="text-white">Login</a><br>
-                    ou <a href="#" class="text-white">Cadastre-se</a></p>
-            </div>
-            <div class="flex">
-                <div class="icon"></div>
+    <header>
+        <div class="promo">
+            <p>Frete grátis nas compras a partir de <strong>R$ 500,00</strong></p>
+        </div>
+        <div class="header-top flex">
+            <div class="space-between container">
+                <a href="index.html">
+                    <div class="flex logo"></div>
+                </a>
+                <div class="flex">
+                    <form action="#" class="form-search">
+                        <input type="text"><button>&#128269;</button>
+                    </form>
+                </div>
+                <div class="flex">
+                    <div class="icon"></div>&nbsp;
+                    <p class="text-white">Olá!, Faça seu <a href="#" class="text-white">Login</a><br>
+                        ou <a href="#" class="text-white">Cadastre-se</a></p>
+                </div>
+                <div class="flex">
+                    <div class="icon"></div>
+                </div>
             </div>
         </div>
-    </header>
-    <nav class="nav-bar">
-        <div class="flex container">
-            <div class="item">
-                <div class="icon"></div>
-                Todos Departamentos
-            </div>
-            <div class="item">
-                <div class="icon"></div>
-                Câmeras de Segurança
-            </div>
-            <div class="item">
-                <div class="icon"></div>
-                Motor de Portão
-            </div>
-            <div class="item">
-                <div class="icon"></div>
-                Fechadura Elétrica
-            </div>
-            <div class="item">
-                <div class="icon"></div>
-                Smart Home
-            </div>
-            <div class="item">
-                <div class="icon"></div>
-                Energia Solar
-            </div>
-            <div class="item">
-                <div class="icon"></div>
-                Redes e Informática
-            </div>
-            <div class="item">
-                <div class="icon"></div>
-                Kits
-            </div>
-            <div class="item">
-                <div class="icon"></div>
-                Ofertas
-            </div>
+        <nav class="nav-bar">
+            <div class="flex container">
+                <div class="item">
+                    <div class="icon"></div>
+                    <a href="#" class="link-navbar">Todos Departamentos</a>
+                </div>
+                <div class="item">
+                    <div class="icon"></div>
+                    <a href="#" class="link-navbar">Câmeras de Segurança</a>
+                </div>
+                <div class="item">
+                    <div class="icon"></div>
+                    <a href="#" class="link-navbar">Motor de Portão</a>
+                </div>
+                <div class="item">
+                    <div class="icon"></div>
+                    <a href="#" class="link-navbar">Fechadura Elétrica</a>
+                </div>
+                <div class="item">
+                    <div class="icon"></div>
+                    <a href="#" class="link-navbar">Smart Home</a>
+                </div>
+                <div class="item">
+                    <div class="icon"></div>
+                    <a href="#" class="link-navbar">Energia Solar</a>
+                </div>
+                <div class="item">
+                    <div class="icon"></div>
+                    <a href="#" class="link-navbar">Redes e Informática</a>
+                </div>
+                <div class="item">
+                    <div class="icon"></div>
+                    <a href="#" class="link-navbar">Kits</a>
+                </div>
+                <div class="item">
+                    <div class="icon"></div>
+                    <a href="#" class="link-navbar">Ofertas</a>
+                </div>
 
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </header>
     <div class="slider-main">
 
-        <div class="splide">
+        <div class="splide" id="slide">
             <div class="splide__track">
                 <ul class="splide__list ">
                     <!-- Init Slider -->
@@ -88,7 +92,7 @@
                             <h3 class="content-title text-bold">Empresa especializada na distribuição<br> de produtos de
                                 segurança eletrônica,<br> informática e telecomunicação.</h3>
                             <p class="content-legend">Ganhe 10% de desconto na primeira compra usando o cupom</p>
-                            <a href="#" class="btn-comprar redondo">PRAXSEG10</a>
+                            <a href="#" class="btn-comprar radius">PRAXSEG10</a>
                         </div>
                         <div class="content"><img class="content-image" src="img/banner2.png"></div>
                     </li>
@@ -98,9 +102,10 @@
                         <div class="content">
                             <h3 class="content-title text-bold">Empresa especializada na distribuição de produtos de
                                 <br>
-                                segurança eletrônica, informática e telecomunicação.</h3>
+                                segurança eletrônica, informática e telecomunicação.
+                            </h3>
                             <p class="content-legend">Ganhe 10% de desconto na primeira compra usando o cupom</p>
-                            <a href="#" class="btn-comprar redondo">PRAXSEG10</a>
+                            <a href="#" class="btn-comprar radius">PRAXSEG10</a>
                         </div>
                         <div class="content">
                             <div class="img"></div>
@@ -113,53 +118,77 @@
     </div>
 
     <h1 class="text-gray text-center ps text-bold">MAIS VENDIDOS</h1>
-    <div class="container">
 
-        <!-- Inicio Card -->
-        <div class="card">
-            <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
+    <div class="splide container" id="slide3">
+        <div class="splide__track">
+            <ul class="splide__list ">
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+            </ul>
         </div>
-        <!-- Fim Card -->
-
-        <!-- Inicio Card -->
-        <div class="card">
-            <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
-        </div>
-        <!-- Fim Card -->
-        <!-- Inicio Card -->
-        <div class="card">
-            <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
-        </div>
-        <!-- Fim Card -->
-        <!-- Inicio Card -->
-        <div class="card">
-            <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
-        </div>
-        <!-- Fim Card -->
     </div>
 
     </div>
@@ -182,116 +211,400 @@
                 </div>
             </div>
         </div>
-        <div class="product">
+        <div class="timer-product">
             <p>Produtos com até</p>
             <p class="desconto">30%</p>
             <p>de desconto</p>
-            <a href="#" class="btn-comprar redondo">GARANTIR O MEU</a>
+            <a href="#" class="btn-comprar radius">GARANTIR O MEU</a>
         </div>
     </div>
     <div class="container spacing">
-        <div class="card-secondary blue ps">
-            <div class="img"></div>
-            <p class="text-white text-bold">Fechadura digital de sobrepor na Horizontal</p>
-            <p class="text-white">Com as fechaduras digitais de sobrepor da ELSYS você terá a mais no tendência em acesso residencial</p>
+        <div class="card-secondary bg-blue ps">
+            <div class="card-secondary-item">
+                <div class="img"></div>
+            </div>
+            <div class="card-secondary-item">
+                <h3 class="text-white text-bold">Fechadura digital de sobrepor na Horizontal</h3>
+                <p class="text-white text-justify spacing">Com as fechaduras digitais de sobrepor da ELSYS você terá a
+                    mais no tendência em
+                    acesso residencial</p>
+                <a href="#" class="btn-conferir">CONFERIR</a>
+            </div>
         </div>
         <div class="card-secondary ps">
         </div>
     </div>
     <h1 class="text-gray text-center ps text-bold">NOVIDADES</h1>
-    <div class="container">
+
+    <div id="slide2" class="splide container">
+        <div class="splide__track">
+            <ul class="splide__list ">
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="text-gray text-center ps text-bold spacing">COMPRE POR CATEGORIAS</h1>
+
+    <div class="splide container" id="slide4">
+        <div class="splide__track">
+            <ul class="splide__list ">
+                <li class="splide__slide">
+                    <div class="circle">
+                        <div class="circle-item">
+                        </div>
+                        <div class="circle-legend"></div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circle">
+                        <div class="circle-item">
+                        </div>
+                        <div class="circle-legend"></div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circle">
+                        <div class="circle-item">
+                        </div>
+                        <div class="circle-legend"></div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circle">
+                        <div class="circle-item">
+                        </div>
+                        <div class="circle-legend"></div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circle">
+                        <div class="circle-item">
+                        </div>
+                        <div class="circle-legend"></div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="circle">
+                        <div class="circle-item">
+                        </div>
+                        <div class="circle-legend"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container spacing">
         <!-- Inicio Card -->
-        <div class="card">
+        <div class="card radius bg-blue ps">
+            <h5 class="card-title text-white text-center">Casa inteligente</h5>
+            <p class="text-white text-center">Automação de Ambientes</p>
             <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
+            <a href="#" class="btn-ver-produtos text-bold radius"> VER PRODUTOS</a>
         </div>
         <!-- Fim Card -->
         <!-- Inicio Card -->
-        <div class="card">
+        <div class="card radius bg-green ps">
+            <h5 class="card-title text-white text-center">Casa inteligente</h5>
+            <p class="text-white text-center">Automação de Ambientes</p>
             <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
+            <a href="#" class="btn-ver-produtos text-bold radius"> VER PRODUTOS</a>
         </div>
         <!-- Fim Card -->
         <!-- Inicio Card -->
-        <div class="card">
+        <div class="card radius bg-gray ps">
+            <h5 class="card-title text-white text-center">Casa inteligente</h5>
+            <p class="text-white text-center">Automação de Ambientes</p>
             <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
+            <a href="#" class="btn-ver-produtos text-bold radius"> VER PRODUTOS</a>
         </div>
         <!-- Fim Card -->
         <!-- Inicio Card -->
-        <div class="card">
+        <div class="card radius bg-blue ps">
+            <h5 class="card-title text-white text-center">Casa inteligente</h5>
+            <p class="text-white text-center">Automação de Ambientes</p>
             <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
+            <a href="#" class="btn-ver-produtos text-bold radius"> VER PRODUTOS</a>
         </div>
         <!-- Fim Card -->
     </div>
     <h1 class="text-gray text-center ps text-bold">OFERTAS</h1>
-    <div class="container">
-        <!-- Inicio Card -->
-        <div class="card">
-            <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
+    <div class="splide container" id="slide5">
+        <div class="splide__track">
+            <ul class="splide__list ">
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+                <li class="splide__slide">
+                    <!-- Inicio Card -->
+                    <div class="card">
+                        <div class="img"></div>
+                        <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
+                        <p class="card-code">COD: 000000</p>
+                        <p class="card-price-a">R$ 70,00</p>
+                        <p class="card-price">R$ 50,00</p>
+                        <p class="card-price-b">ou em 5x de R$ 10,00</p>
+                        <a href="#" class="btn-comprar">COMPRAR</a>
+                    </div>
+                    <!-- Fim Card -->
+                </li>
+            </ul>
         </div>
-        <!-- Fim Card -->
-        <!-- Inicio Card -->
-        <div class="card">
-            <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
-        </div>
-        <!-- Fim Card -->
-        <!-- Inicio Card -->
-        <div class="card">
-            <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
-        </div>
-        <!-- Fim Card -->
-        <!-- Inicio Card -->
-        <div class="card">
-            <div class="img"></div>
-            <h5 class="card-title text-gray">Nome do Produto, Marca e descrição</h5>
-            <p class="card-code">COD: 000000</p>
-            <p class="card-price-a">R$ 70,00</p>
-            <p class="card-price">R$ 50,00</p>
-            <p class="card-price-b">ou em 5x de R$ 10,00</p>
-            <a href="#" class="btn-comprar">COMPRAR</a>
-        </div>
-        <!-- Fim Card -->
     </div>
+
+
+    <h1 class="text-gray text-center ps text-bold">NAVEGUE POR MARCAS</h1>
+    <div class="splide container" id="slide6">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="img-marcas">
+                        <img src="img/cs-logo.png">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="img-marcas">
+                        <img src="img/hikvision.png">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="img-marcas">
+                        <img src="img/JFL-logo.jpg">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="img-marcas">
+                        <img src="img/rossi.jpg">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="img-marcas">
+                        <img src="img/ppa.png">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="img-marcas">
+                        <img src="img/ZKTeco_Logo.png">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="img-marcas">
+                        <img src="img/kronos.png">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer-1 ps">
+        <div class="footer-1-item">
+            <span class="text-gray medium text-center">ASSISTÊNCIA TÉCNICA</span>
+            <span class="text-white text-bold text-center large">AUTORIZA</span>
+        </div>
+        <div class="footer-1-item">
+            <img src="img/satisfation.png">
+        </div>
+        <div class="footer-1-item text-right text-gray medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nisi officia illo sint modi reprehenderit
+            maxime fugit! Provident non libero veritatis, vel fugiat, nostrum earum natus odio sunt corporis quas?
+        </div>
+    </div>
+    <div class="footer-2 container">
+        <h1 class="text-gray text-center ps text-bold">SEGURANÇA E TECNOLOGIA</h1>
+        <p class="text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ratione, quae et facilis odit impedit
+            in! Aliquam hic alias architecto dolor iste omnis, consequatur suscipit delectus consequuntur quod, nobis
+            quam?
+        </p>
+    </div>
+    <div class="newsletter">
+        <div class="container">
+            <div class="newsletter-item">
+                <p class="text-white text-bold">NEWSLETTER</p>
+                <p class="text-white">Cadastre-se para receber nossa <br>novidades</p>
+            </div>
+            <div class="newsletter-item">
+                <form action="#">
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="E-mail">
+                    <button>CADASTRAR</button>
+                </form>
+                <p class="text-white text-right">*Clicando em "Cadastrar" você concorda com os termos da política de
+                    privacidade</p>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer bg-gray">
+        <div class="container">
+            <div class="footer-item">
+                <p class="text-bold text-green-2">SOBRE A PRAXSEG</p>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Assistência Técnica</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ul>
+                <p class="text-bold text-green-2 ps">NOSSAS LOJAS</p>
+                <div class="icones text-white">
+                    <div class="icon"></div> Av. Cap, Júlio Bezerra, 569- <br>
+                    Centro, Boa Vista - RR, 69301-410
+                </div>
+                <div class="icones text-white">
+                    <div class="icon"></div> Av. Cap, Júlio Bezerra, 569- <br>
+                    Centro, Boa Vista - RR, 69301-410
+                </div>
+            </div>
+
+            <div class="footer-item">
+                <p class="text-bold text-green-2">ÁREA DO CLIENTE</p>
+                <ul>
+                    <li><a href="#">Meus Pedidos</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Política de Frete e Reembolso</a></li>
+                    <li><a href="#">Política de Troca e Devoluções</a></li>
+                    <li><a href="#">Política de Entrega</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <p class="text-bold text-green-2">FALE CONOSCO</p>
+                <p class="text-white ps"><span class="text-bold">Telefone</span> <br>(00) 0 0000-0000</p>
+                <p class="text-white ps"><span class="text-bold">E-mail para contato</span> <br>contato@email.com.br</p>
+                <p class="text-white ps"><span class="text-bold">WhatsApp</span> <br>(00) 0 0000-0000</p>
+                <p class="text-white ps">Horário de Atendimento <br>
+                    Das 08h às 19h de Segunda a <br>
+                    Sábado exceto feriados</p>
+            </div>
+
+            <div class="footer-item">
+                <p class="text-bold text-green-2">FORMAS DE PAGAMENTO</p>
+                <div class="icones">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                </div>
+                <p class="text-bold text-green-2">SEGURANÇA</p>
+                <div class="icones">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/splide.min.js"></script>
     <script src="js/main.js"></script>
 </body>

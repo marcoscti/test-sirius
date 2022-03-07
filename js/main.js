@@ -24,8 +24,34 @@ window.onload = function () {
     startTimer(duration, display, display2, display3); // iniciando o timer
 };
 // Configurando o Splid Slider
-var splide = new Splide('.splide');
-splide.mount();
+let slide = new Splide('#slide');
+slide.mount();
 
-var splide2 = new Splide('#splide2');
-splide2.mount();
+let slide2 = new Splide('#slide2',{
+    perPage: 4,
+    rewind:true,
+});
+slide2.mount();
+
+let slide3 = new Splide('#slide3',{
+    perPage:4,
+    rewind:true,
+});
+slide3.mount();
+
+let slide4 = new Splide('#slide4',{
+    perPage:5,
+    rewind:true,
+});
+slide4.mount();
+let slide5 = new Splide('#slide5',{
+    perPage:4,
+    rewind:true,
+});
+slide5.mount();
+
+let slide6 = new Splide('#slide6',{
+    perPage:7,
+    rewind:true,
+});
+slide6.mount();
