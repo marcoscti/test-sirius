@@ -42,17 +42,19 @@
 .form-search{
     margin: 10px;
     display: flex;
+    box-sizing: border-box;
 }
 .form-search button,input{
     padding: 8px;
+    margin: 0;
 }
 .form-search input{
     width: 320px;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     border: 1px solid var(--verde);
 }
 .form-search button{
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0 ;
     border: none;
     background: var(--fundo);
 }
@@ -429,3 +431,49 @@ color: var(--verde);
 input::placeholder{
     font-family: 'Montserrat';
 }
+
+/* Dropdown */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content .icon{
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      background-color: var(--verde);
+  }
+  .dropdown-content a {
+    color: var(--cinza);
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-content a:hover {
+      color: var(--verde);
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
